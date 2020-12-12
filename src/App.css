@@ -19,6 +19,7 @@ body {
 }
 
 .browser {
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     background: #f3470c;
@@ -33,6 +34,7 @@ body {
     padding-right: 10px;
     display: flex;
     padding-top: 10px;
+    max-width: 100%;
 }
 
 .tab {
@@ -40,8 +42,9 @@ body {
     justify-content: space-between;
     position: relative;
     background: #2a55d8;
-    min-width: 150px;
+    min-width: 70px;
     font-size: 14px;
+    padding: 5px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     transition: 0.3s ease all;
@@ -50,8 +53,10 @@ body {
 }
 
 .tab button {
+    white-space: nowrap; /* Текст не переносится */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis; /* Добавляем многоточие */
     width: 100%;
-    padding: 6px 15px;
     color: #bac8f4;
     background: none;
     border: none;
@@ -62,7 +67,7 @@ body {
 
 .tab button.close-tab {
     max-width: 15px;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 15px;
 }
 .tab button.close-tab:hover {
@@ -87,6 +92,7 @@ body {
     background: #4c75f2;
     font-weight: bold;
     color: #fff;
+    text-overflow: ellipsis;
 }
 
 .tab.is-active button {
@@ -94,7 +100,7 @@ body {
 }
 
 .tab.new-tab {
-    min-width: 50px;
+    max-width: 50px;
 }
 
 .highlight {
