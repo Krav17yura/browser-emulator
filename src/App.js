@@ -5,11 +5,14 @@ import AddressBar from "./components/adress-bar";
 
 const App = () => {
     const [browsers, setBrowsers] = useState([
-        "https://memory-game-f35f6.web.app/",
+        "https://moviedb-882ec.web.app/",
+        "https://twitter-clone-53831.web.app/auth",
         "https://contacts-reactredux.web.app/",
         "https://corona-timer-8df0c.firebaseapp.com/",
         "https://test-task-bb726.web.app/",
+        "https://unsplashimagegallery.web.app/",
         "https://lorem-ipsum-text-generator.web.app",
+        "https://memory-game-f35f6.web.app/",
         "https://trivia-question-bde93.web.app/",
         "https://typo-game.web.app",
         "https://paperrockscissors-dfad6.web.app",
@@ -17,7 +20,6 @@ const App = () => {
         "https://calendar-c86f6.web.app",
         "https://animated-chat-ef400.web.app/",
         "https://calculator-aa011.web.app/",
-        "https://unsplashimagegallery.web.app/",
         "https://simpletimer-a45f9.web.app"
     ]);
     const [activeBrowser, setActiveBrowser] = useState(0)
