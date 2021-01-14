@@ -5,9 +5,10 @@ import AddressBar from "./components/adress-bar";
 
 const App = () => {
     const [browsers, setBrowsers] = useState([
+        "https://reactreduxfirebase-auth.web.app/login",
+        "https://contacts-reactredux.web.app/",
         "https://moviedb-882ec.web.app/",
         "https://twitter-clone-53831.web.app/auth",
-        "https://contacts-reactredux.web.app/",
         "https://corona-timer-8df0c.firebaseapp.com/",
         "https://test-task-bb726.web.app/",
         "https://unsplashimagegallery.web.app/",
